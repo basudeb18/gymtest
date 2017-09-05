@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FITNESS PANET GYM</title>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+<!--Using jQuery and jQuery UI for display effects-->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+<!--Using the hamburger menu display code-->
+<script src="js/FitnessPlanetGym.js"></script>
+  <script src="js/gallery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jswipe-0.1.2.js"></script>
+
+<!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
+<link rel="stylesheet" type="text/css" media="all" href="css/FitnessPlanetGym.css"/>
+  <link rel="stylesheet" type="text/css" media="all" href="css/gallery.css"/>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+  <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/popUprules.js"></script>
+ 
+        
+</head>
+
+<body>
+<header>
+  <ul>
+    <a href="index.html" >your's fitness planet gym</a>
+  </ul>
+
+    <img id="right" onclick="location.href='index4.html';" class="button alt" src="css/image/locategymtemper.png">
+
+    <div id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+<!--This wrapping container is used to get the width of the whole content-->
+<div id="container"> 
+  
+  <!--The Hamburger Button in the Header-->
+  
+  
+  <!--The mobile navigation Markup hidden via css-->
+  <nav>
+  <img id="navTopPhoto" src="css/image/navTopPhoto.png">
+    <ul>
+      <li style="margin-top:5%;"><a href="index.html" style="color:#ffffff">About us</a></li>
+      <li><a href="index4.html">Locate your gym</a></li>
+      <li><a href="index1.html">Gallary</a></li>
+      <li><a id="btnShow" value="Show Popup">Rules</a></li>
+      <li><a href="index2.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="dialog">
+    1. Do not bring your gym bag or other personal belongings onto the fitness floor.</br>
+    2. Be courteous when using the water fountain. If there is a line, please do not fill up your water bottle.</br>
+    3. Ask if you may “work in,” and always allow others the same courtesy; afterward, return the seat and weight to the last user’s setup.</br>
+    4. Refrain from yelling, using profanity, banging weights and making loud sounds.</br>
+    5. Do not sit on machines between sets.</br>
+    6. Ask staff to show you how to operate equipment properly so that others are not waiting as you figure it out.</br>
+    7. Do not bring children onto the gym floor. Children must remain in the childcare area.</br>
+    8. Do not disturb others. Focus on your own workout and allow others to do the same.</br>
+  </div>
+  <!--The Layer that will be layed over the content
+    so that the content is unclickable while menu is shown-->
+  <div id="contentLayer"></div>
+
+  <section id="banner">
+  <!--The content of the site-->
+  <div id="content">
+    <h1 id="heading">Fitness Planet Gym</h1>
+    
+    <p id="para"> <b>Fitness is a lifestyle.</b> Comfy youself as Fitness is Fun at <b>Fitness Planet Gym</b>. <br/>We believe how you workout is totally up to you, once you set your fitness goal we are there to help you<br/> to achieve it. We are not just a gym We are <b>"Fitness Planet"</b>
+				Our environment helps you to workout at your own pace and just do your<br/> own thing without ever having to worry about being judged
+				The gym has all sorts of equipment's and provides clients with a customized fitness plan."</p>
+
+
+    </div><br/>
+    <a href="#menuPortion" id="scrolly">Get Started</a>
+</section>
+  <section id="menuPortion">
+    <div class="inner flex flex-3">
+      <div class="flex-item left">
+        <div id="two">
+          <h3>DOWNLOAD OUR APP</h3>
+          <p>Comming soon.... <br/>on play store</p>
+        </div>
+        <div>
+          <h3 onclick="location.href='index4.html';">LOCATE US</h3>
+          <p>ITI Rd, near GB hospital,79 tila<br />Agartala,Tripura </p>
+        </div>
+      </div>
+      <div class="flex-item image fit round">
+        <img id="appImg" src="css/image/appPhoto.jpg" alt="" />
+      </div>
+      <div class="flex-item right">
+        <div>
+          <h3 onclick="location.href='#galleryPortion';">GALLERY</h3>
+          <p>Our gym happy moments<br /> a complete place for your physical and mental fitness.</p>
+        </div>
+        <div>
+          <h3 onclick="location.href='#footer';">CONTACT US</h3>
+          <p>click above<br /> to contact us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="infoPortion">
+    <div class="inner">
+      <h2>FPG Trainer</h2>
+      <figure>
+        <blockquote>
+          "Fitness Planet Gym has certified trainer, and he is available for workout help any time during your awesome workout period.<br/>Welcome to <b>fitness planet gym<b>"
+        </blockquote>
+        <footer>
+          <cite class="author">Biswajit Banik</cite><br>
+          <cite class="company">Founder, fitness planet gym</cite>
+        </footer>
+      </figure>
+    </div>
+  </section>
+
+  <section id="galleryPortion">
+
+    <button id="leftButton" onclick='moveLeft()'>&lt;</button>
+    <button id="rightButton" onclick='moveRight()'>&gt;</button>
+
+    <div id="galleryContainer">
+      <div id="gallery">
+        <img src="css/image/pose2.jpg" alt="Barbed Wire" />
+        <img src="css/image/posing.jpg" alt="Feather" />
+        <img src="css/image/twoboys.jpg" alt="Drift Stuff" />
+        <img src="slides/Driftwood.jpg" alt="Driftwood" />
+        <img src="slides/DriftwoodGuy.jpg" alt="Driftwood and Guy" />
+        <img src="slides/GrassLight.jpg" alt="Grass and Light" />
+        <img src="slides/PebbleAndShells.jpg" alt="Pebble and Shells" />
+        <img src="slides/StickSea.jpg" alt="Stick and Sea" />
+        <img src="slides/SeaweedGasmask.jpg" alt="Seaweed Gasmask" />
+        <img src="slides/Surfers.jpg" alt="Surfers" />
+      </div>
+    </div>
+
+
+  </section>
+
+  <footer id="footer">
+    <div class="inner">
+      <h2>Contact Us</h2>
+      <ul class="actions">
+        <li><span class="icon fa-phone"></span> <a href="#">call +919871800295</a></li>
+        <li><span class="icon fa-envelope"></span> <a href="#">Whatsapp +919643866383</a></li>
+        <li><span class="icon fa-map-marker"></span> <p><b>Send your query on facebook:</b></p>
+          <a href="https://www.facebook.com/fitforfitness">https://www.facebook.com/fitforfitness<a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+	
+</div>
+
+
+
+
+</body>
+</html>
